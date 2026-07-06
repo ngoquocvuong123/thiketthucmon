@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập | Thời Trang</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dang-nhap">
+
+<header class="site-header">
+  <nav class="wrap nav">
+    <a class="logo" href="index.html">THỜI<span>.</span>TRANG</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Trang chủ</a></li>
+      <li><a href="tin-tuc.html" data-page="tin-tuc.html">Tin Tức</a></li>
+      <li><a href="su-kien.html" data-page="su-kien.html">Sự Kiện</a></li>
+      <li><a href="xu-huong.html" data-page="xu-huong.html">Xu Hướng</a></li>
+      <li><a href="lam-dep.html" data-page="lam-dep.html">Làm Đẹp</a></li>
+    </ul>
+    <div class="nav-user" data-nav-user></div>
+    <button class="hamburger" data-hamburger aria-label="Mở menu">☰</button>
+  </nav>
+</header>
+
+<div class="wrap auth-wrap">
+  <div class="auth-card">
+    <div class="auth-tabs">
+      <div class="auth-tab active" data-tab="login">Đăng nhập</div>
+      <div class="auth-tab" data-tab="register">Đăng ký</div>
+    </div>
+
+    <form class="auth-form active" data-form="login">
+      <div class="auth-msg"></div>
+      <div class="field">
+        <label for="l-username">Tên đăng nhập</label>
+        <input id="l-username" name="username" type="text" autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="l-password">Mật khẩu</label>
+        <input id="l-password" name="password" type="password" autocomplete="current-password">
+      </div>
+      <button class="btn" type="submit">Đăng nhập</button>
+      <p class="auth-hint">Chưa có tài khoản? Chọn tab “Đăng ký” ở trên.</p>
+    </form>
+
+    <form class="auth-form" data-form="register">
+      <div class="auth-msg"></div>
+      <div class="field">
+        <label for="r-username">Tên đăng nhập</label>
+        <input id="r-username" name="username" type="text" autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="r-password">Mật khẩu</label>
+        <input id="r-password" name="password" type="password" autocomplete="new-password">
+      </div>
+      <div class="field">
+        <label for="r-confirm">Nhập lại mật khẩu</label>
+        <input id="r-confirm" name="confirm" type="password" autocomplete="new-password">
+      </div>
+      <button class="btn" type="submit">Tạo tài khoản</button>
+      <p class="auth-hint">Tài khoản được lưu ngay trên trình duyệt của bạn.</p>
+    </form>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 Thời.Trang. Bảo lưu mọi quyền.</span>
+      <span>Đồ án môn học — HTML · CSS · JavaScript</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
